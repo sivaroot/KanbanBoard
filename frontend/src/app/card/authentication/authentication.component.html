@@ -1,0 +1,52 @@
+<mat-card class=authen>
+    <p class="header-font center-text"> {{header}}</p>
+
+    <div class="recommend">
+        <div *ngIf="isSignin">
+            <p class="detail">Sign in to get your kanban board recommendations,
+                kanban method helped bring kanban into the software and services space
+        </div>
+        <div *ngIf="isSignup">
+            <p class="detail">Create an account to make your kanban board for agile
+                project management tool designed to help visualize work</p>
+        </div>
+    </div>
+
+    <mat-grid-list cols="1" rowHeight="50px">
+        <mat-grid-tile>
+            <button mat-raised-button class="signin">
+                <mat-icon class="ico_signin" svgIcon="google"></mat-icon>
+                <p class="inbox_p" style="display: inline">
+                    Sign {{mode}} with Google
+                </p>
+            </button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <button mat-raised-button class="signin">
+                <mat-icon class="ico_signin" svgIcon="facebook"></mat-icon>
+                <p class="inbox_p" style="display: inline">
+                    Sign {{mode}} with Facebook
+                </p>
+            </button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <button mat-raised-button class="signin">
+                <mat-icon class="ico_signin" svgIcon="github"></mat-icon>
+                <p class="inbox_p" style="display: inline">
+                    Sign {{mode}} with Github
+                </p>
+            </button>
+        </mat-grid-tile>
+        <mat-grid-tile *ngIf="isSignin">
+                <p >
+                    No account?    <a [routerLink]="['/signup']" style="color: #29a329">create one</a> 
+                </p>
+        </mat-grid-tile>
+        <mat-grid-tile *ngIf="isSignup">
+            <p  >
+                Already have an account?   <a [routerLink]="['/signin']" style="color: #29a329">signin</a> 
+            </p>
+    </mat-grid-tile>
+    </mat-grid-list>
+
+</mat-card>

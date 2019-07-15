@@ -1,0 +1,51 @@
+  .authen {
+      padding: 70px 40px;
+      width: 800px;
+      height: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+       /* background-image: url("../../../assets/img/authen-950-500.jpg");
+    background-repeat: no-repeat;
+    background-attachment: '';
+    background-size: cover; */
+  }
+
+  .inbox_p {
+      margin-left: 80px;
+      margin-top: -1px;
+  }
+
+  .ico_signin {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 21px;
+      left: 60px;
+  }
+
+
+  .signin {
+      margin: auto auto;
+      width: 280px;
+      height: 40px;
+      font-size: 14px;
+      text-align: left;
+  }
+  .recommend {
+      width: 360px;
+      height: 72px;
+      text-align: center;
+      margin: auto auto;
+      line-height: 25px;
+      margin-bottom: 40px;
+
+  }
+.detail {
+    color: #333333;
+}
+
+
+  .header {
+      font-size: 32px;
+  }
